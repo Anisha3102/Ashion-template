@@ -1,0 +1,59 @@
+.home a{
+    color: black;
+}
+
+.home span{
+    color: rgb(151, 150, 150);
+}
+
+.home{
+    font-size: 20px;
+    margin: 50px 200px;
+}
+
+.categories{
+    justify-content: space-between;
+    margin: 100px 200px;
+    position: relative;
+}
+
+.category{
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cat{
+    justify-content: space-between;
+    color: rgb(80, 71, 71);
+    cursor: pointer;
+}
+
+.cat h5{
+    font-size: 16px;
+}
+
+.categories span{
+    border-bottom: 2px solid rgb(229, 35, 35);
+}
+
+.image1 h4{
+    position: absolute;
+    top: 2%;
+    left: 19%;
+    background-color: green;
+    color: white;
+    padding: 4px;
+}
+
+.accent{
+    accent-color: red;
+}
+
+.price .min,.price .max
+{
+    margin-top: -35px;
+}
+
+.price .max{
+    margin-left: 80px;
+}

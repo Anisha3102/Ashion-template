@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+}
+
+.d-flex {
+    display: flex;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: white;
+   
+}
+
+ul{
+    list-style: none; 
+}
+
+ul li{
+    margin:15px;
+}
+
+.dropdown{
+    display: none;
+}
+
+.extra{
+    align-items: center;
+}
+
+ul li,.logo:hover{
+    cursor: pointer;
+}
+
+nav ul li a {
+    height: 100%;
+    position: relative;
+    color: #000000;
+    transition: all 0.5s ease;
+}
+
+nav ul .active {
+    border-bottom: 3px solid #ff0000;
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -2px;
+    left: 50%;
+    background-color: #ff0000;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.menu-button{
+    display: none;
+}
+
+@media(max-width: 1200px) {
+   .menu {
+        display: none;
+    }
+
+    .extra {
+        display: none;
+    }
+
+    .menu-button {
+        display: inline;
+        border: 2px solid black;
+        padding: 10px;
+    }
+}
+
+.footerpart{
+    justify-content: space-evenly;
+    margin: 60px 0px;
+}
+
+.one p,.two p,.three p{
+    margin: 15px 0px;
+    color: rgb(139, 136, 136);
+}
+
+.payment{
+    gap: 10px;
+}
+
+.news{
+    border: 1px solid rgb(182, 177, 177);
+    border-radius: 25px;
+    margin: 30px -8px;
+    justify-content: space-evenly;
+    padding: 4px;
+}
+
+.email input{
+    outline: none;
+    border: 0px;
+    margin: 0px 18px;
+    margin-top: 8px;
+   
+}
+
+.news h4{
+    background-color: rgb(209, 22, 22);
+    padding: 6px;
+    border-radius: 30px;
+}
+
+.news h4 a{
+    color: white;
+    padding:25px;
+}
+
+.newlettericon{
+    margin: 10px 0px;
+}
+
+.facebook,.twitter,.youtube,.instagram,.pinterest{
+    background-color: rgb(227, 224, 224);
+    padding: 10px;
+    border-radius: 55%;
+    margin-right: 5px;
+}
+
+hr{
+    width: 85%;
+    margin: auto;
+}
+
+.copyright p{
+    color: rgb(111, 110, 110);
+}
+
+.copyright{
+    justify-content: center;
+    margin: 40px 0px;
+}
+
+.copyright i{
+    color: #a91616;
+}
+
+
+
+
+
+
+
+
+
+
+
+
